@@ -99,14 +99,14 @@ namespace SimpleCalculator
 
                     operands[i] = res.ToString();
 
-                    // Shift the operands and operators to the left
+                    // Shift the operands and operators to previous left
                     operands.RemoveAt(i + 1);
                     operators.RemoveAt(i);
                     i--; // Adjust the index after removal
                 }
             }
 
-            // Evaluate addition and subtraction
+            // After the all preference we move towards addition and its evaluation
             int result = int.Parse(operands[0]);
 
             for (int i = 0; i < operators.Count; i++)
