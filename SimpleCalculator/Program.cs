@@ -87,7 +87,7 @@ namespace SimpleCalculator
                     }
 
                     int res = (operators[i] == '*') ? a * b : a / b;
-                    /*int res;
+                    /*int res
                     if (operators[i] == '*')
                     {
                         res = a * b;
